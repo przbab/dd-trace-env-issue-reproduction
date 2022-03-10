@@ -1,5 +1,8 @@
 # Repo to visualize dd-trace issue
 
+Issue:
+https://github.com/DataDog/dd-trace-js/issues/1904
+
 Issue appears from version `2.2.1` up when `NODE_ENV` is set to anything other than `production`.
 
 To reproduce:
