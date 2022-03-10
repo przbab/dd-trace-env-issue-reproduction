@@ -1,0 +1,19 @@
+{
+  "name": "dd-trace-error-example",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "startWithoutDDTrace": "node --inspect ./node_modules/.bin/next start",
+    "startWithProductionEnv": "NODE_ENV=production node --inspect --require ./datadog-trace.js ./node_modules/.bin/next start",
+    "start": "NODE_ENV=development node --inspect --require ./datadog-trace.js ./node_modules/.bin/next start",
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dd-trace": "^2.3.1",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
